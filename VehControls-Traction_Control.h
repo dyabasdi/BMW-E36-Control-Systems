@@ -2,4 +2,7 @@
 #define TRACTIONCONTROL_H
 #include <Arduino.h>
 
-void tractionControl();
+void tractionControlSetup();
+void tractionControlAlgorithm(unsigned long wheelSpeeds[4]);
+
+#endif
