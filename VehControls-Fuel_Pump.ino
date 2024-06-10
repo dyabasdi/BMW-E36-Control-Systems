@@ -2,6 +2,7 @@ volatile float manifold_pressure = analogRead(A0) *(/*Linear relationship for pr
 const int activation_pressure = 5;//activates second fuel pump at this pressure
 const int output_pin = 2;//pin on arduino
 
+
 void setup() {
   Serial.begin(9600);
   // initialize variables
