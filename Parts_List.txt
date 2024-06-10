@@ -1,0 +1,15 @@
+Hardware Still Needed:
+
+Display Screen:
+- RPi Touchscreen
+
+PWM Fan Control:
+- MOSFET to vary voltage based off PWM signal from Arduino
+- 12V Fans (two radiator fans on my car)
+
+Traction Control:
+- Inputs: 
+    - VR to Hall Effect Sensor Converters
+    - Engine RPM Input (used to calculate gear)
+- Outputs:
+    - Analog Signal to ECU between 0 and 5V indicating the amount to retard the ignition/boost cut
