@@ -20,7 +20,7 @@ void tractionControlSetup() {
 void tractionControlAlgorithm(unsigned long wheelSpeeds[4]){
   unsigned long currTime = millis();
   if (currTime - prevTime >= sampleRate){
-    float vehicleSpeed = (wheelSpeeds[0] + wheelSpeeds[1])/2;// average of non-driven wheels = vehicle speed
+    float vehicleSpeed = (wheelSpeeds[0] + wheelSpeeds[1])/2;// average of driven wheels (front wheels) = vehicle speed
     float wheelSlipFrL = (wheelSpeeds[0]/vehicleSpeed) - 1;
     float wheelSlipFrR = (wheelSpeeds[1]/vehicleSpeed) - 1;
     float wheelSlipReL = (wheelSpeeds[2]/vehicleSpeed) - 1;
