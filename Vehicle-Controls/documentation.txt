@@ -1,7 +1,0 @@
-Pinout:
-
-A0 - Coolant Temp Signal
-A1 - Manifold Air Pressure Signal
-D2 - Fan Duty Cycle
-D3 - Secondary Fuel Pump Trigger
-D4 - Traction Control Output (E-Throttle Adjustment %)
