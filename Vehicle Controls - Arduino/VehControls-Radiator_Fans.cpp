@@ -11,11 +11,9 @@ void radFanControl(float CAN_coolantTemp){
 
   if (coolantTemp < 170){
     analogWrite(2, 0);
-  }
-  else if (coolantTemp >= 190) {
+  } else if (coolantTemp >= 190) {
     analogWrite(2, 255);
-  }
-  else {
+  } else {
     float fanPWM = (12.75 * coolantTemp) -2167.5;// linear relationship between 170-190°F and 0-255 PWM
     analogWrite(2, fanPWM);
   }
