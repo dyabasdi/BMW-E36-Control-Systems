@@ -45,7 +45,7 @@ void tractionControlAlgorithm(unsigned long wheelSpeeds[4]){
       prevTime = currTime;
     } else {
       // if slip is not enough, no adjustments made to throttle
-      analogWrite(4, 0)
+      analogWrite(4, 0);
     }
   }
 }
