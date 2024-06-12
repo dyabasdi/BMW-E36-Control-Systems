@@ -1,9 +1,9 @@
 #include "Arduino.h"
 #include "VehControls-Traction_Control.h"
 
-float Kp = 1.0;
-float Ki = 1.0;
-float Kd = 1.0;
+float Kp = 4.8;
+float Ki = 2.1;
+float Kd = 0.4;
 const float desiredSlip = 0.10;
 double slip = 0;
 double prevError = 0;
