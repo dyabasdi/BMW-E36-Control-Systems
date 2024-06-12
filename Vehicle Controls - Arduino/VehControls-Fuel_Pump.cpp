@@ -10,8 +10,7 @@ void fuelPumpControl(int CAN_MAP){
   CAN_MAP = manifoldPressure / 6.89475729;//conversion to PSI for digital dash
   if (manifoldPressure > 0){
     analogWrite(3, 255);
-  }
-  else {
+  } else {
     analogWrite(3, 0);
   }
 }
